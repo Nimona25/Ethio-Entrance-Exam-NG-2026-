@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chemistry Mock Exam</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    font-size:60px;
+}
+
+#timer{
+    background:orange;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:15px;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+#question-number{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+#progress{
+    width:100%;
+    height:25px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+#progress-bar{
+    height:100%;
+    width:10%;
+    background:green;
+}
+
+#question{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.option{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+button{
+    padding:15px 25px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.back{
+    background:#1565c0;
+}
+
+.next{
+    background:#1565c0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Chemistry Mock Exam</h1>
+
+<div id="timer">Time Left: 120:00</div>
+
+<div id="question-number"></div>
+
+<div id="progress">
+    <div id="progress-bar"></div>
+</div>
+
+<div id="question"></div>
+
+<div id="options"></div>
+
+<button class="back" onclick="previousQuestion()">Back</button>
+
+<button class="next" onclick="nextQuestion()">Next</button>
+
+<script src="chemistry.js"></script>
+
+</body>
+</html>

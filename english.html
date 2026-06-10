@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>English Mock Exam</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+#timer{
+    background:orange;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+#progress{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+#progress-bar{
+    height:100%;
+    width:10%;
+    background:green;
+    border-radius:10px;
+}
+
+.option{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+button{
+    padding:15px 25px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    margin-top:15px;
+}
+
+.back{
+    background:#1565c0;
+}
+
+.next{
+    background:#1565c0;
+}
+</style>
+</head>
+
+<body>
+
+<h1>English Mock Exam</h1>
+
+<div id="timer">Time Left: 120:00</div>
+
+<h2 id="question-number"></h2>
+
+<div id="progress">
+<div id="progress-bar"></div>
+</div>
+
+<h3 id="question"></h3>
+
+<div id="options"></div>
+
+<button class="back" onclick="previousQuestion()">Back</button>
+<button class="next" onclick="nextQuestion()">Next</button>
+
+<script src="english.js"></script>
+
+</body>
+</html>

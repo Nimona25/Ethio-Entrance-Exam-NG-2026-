@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+h1{
+    color:#005bbb;
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#005bbb;
+    color:white;
+}
+
+.approve{
+    background:green;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+.reject{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Admin Panel</h1>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>Transaction ID</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Nimona Hirpa</td>
+<td>09XXXXXXXX</td>
+<td>TX123456</td>
+<td>Pending</td>
+<td>
+<button class="approve">Approve</button>
+<button class="reject">Reject</button>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>physcis Mock Exam</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+#timer{
+    background:orange;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+#questionCounter{
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.progress-container{
+    width:100%;
+    height:25px;
+    background:#ddd;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+#progressBar{
+    height:25px;
+    width:0%;
+    background:green;
+    border-radius:20px;
+}
+
+#question{
+    font-size:24px;
+}
+
+.option{
+    display:block;
+    margin:10px 0;
+    padding:10px;
+    background:white;
+    border-radius:8px;
+}
+
+button{
+    background:#0057b8;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:20px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+#restartBtn{
+    background:green;
+    display:none;
+}
+
+#result{
+    margin-top:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Mathematics Mock Exam</h1>
+
+<div id="timer">Time Left: 10:00</div>
+
+<div id="questionCounter"></div>
+
+<div class="progress-container">
+<div id="progressBar"></div>
+</div>
+
+<div id="questionElement"></div>
+<div id="options"></div>
+
+<button id="backBtn" onclick="previousQuestion()">
+Back
+</button>
+
+<button id="nextBtn" onclick="nextQuestion()">
+Next
+</button>
+
+<button id="restartBtn" onclick="location.reload()">
+Restart Exam
+</button>
+
+<div id="result"></div>
+
+<script src="physcis.js"></script>
+</body>
+</html>

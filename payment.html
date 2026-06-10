@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:20px;
+}
+
+.payment-box{
+    max-width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+h1{
+    color:#005bbb;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:50px;
+    font-weight:bold;
+    color:#f5b400;
+    margin-bottom:20px;
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+.payment-btn{
+    display:block;
+    width:100%;
+    padding:18px;
+    margin:15px 0;
+    border:none;
+    border-radius:12px;
+    background:#f5b400;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="payment-box">
+
+    <h1>Premium Access</h1>
+
+    <div class="price">399 ETB</div>
+
+    <h2>Select Payment Method</h2>
+
+    <button class="payment-btn"
+    onclick="window.location.href='telebirr.html'">
+    Telebirr
+    </button>
+
+    <button class="payment-btn"
+    onclick="window.location.href='cbebirr.html'">
+    CBE Birr
+    </button>
+
+    <button class="payment-btn"
+    onclick="window.location.href='bank.html'">
+    Bank Transfer
+    </button>
+
+</div>
+
+</body>
+</html>

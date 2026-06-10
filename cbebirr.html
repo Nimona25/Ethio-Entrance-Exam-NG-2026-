@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CBE Birr Payment</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+padding:20px;
+}
+
+.container{
+background:white;
+padding:25px;
+border-radius:15px;
+max-width:400px;
+margin:auto;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+color:#0057b8;
+}
+
+.amount{
+font-size:40px;
+font-weight:bold;
+color:#f4b400;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#f4b400;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Pay with CBE Birr</h1>
+
+<p class="amount">399 ETB</p>
+
+<p><b>CBE Birr Number:</b></p>
+
+<h2>0905257330</h2>
+
+<p>
+Send the payment and keep the transaction ID.
+</p>
+<input type="text" id="txid" placeholder="Enter Transaction ID">
+
+<button onclick="submitPayment()">
+I Have Paid
+</button>
+
+</div>
+<script>
+
+function submitPayment(){
+
+let txid = document.getElementById("txid").value;
+
+if(txid==""){
+alert("Please enter Transaction ID");
+return;
+}
+
+localStorage.setItem("txid", txid);
+
+window.location.href="confirmation.html";
+
+}
+
+</script>
+
+</body>
+</html>

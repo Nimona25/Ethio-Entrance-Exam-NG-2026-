@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biology Mock Exam</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+#timer{
+    background:orange;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+#progress{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+#progress-bar{
+    height:20px;
+    width:0%;
+    background:green;
+    border-radius:10px;
+}
+
+.option{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    color:white;
+    background:#1565c0;
+    border-radius:10px;
+    font-size:20px;
+    margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Biology Mock Exam</h1>
+
+<div id="timer">Time Left: 120:00</div>
+
+<h2 id="question-number"></h2>
+
+<div id="progress">
+    <div id="progress-bar"></div>
+</div>
+
+<div id="question"></div>
+
+<div id="options"></div>
+
+<button onclick="previousQuestion()">Back</button>
+<button onclick="nextQuestion()">Next</button>
+
+<script src="biology.js"></script>
+
+</body>
+</html>
