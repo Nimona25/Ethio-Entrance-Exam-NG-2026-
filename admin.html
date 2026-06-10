@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+</head>
+
+<body style="font-family:Arial;text-align:center;padding:50px;">
+
+<h1>Admin Approval Panel</h1>
+
+<p>Approve students after confirming payment.</p>
+
+<button onclick="approveStudent()">
+Approve Payment
+</button>
+
+<script>
+function approveStudent(){
+
+localStorage.setItem("approved","yes");
+
+alert("Student Approved Successfully");
+
+}
+</script>
+
+</body>
+</html>
